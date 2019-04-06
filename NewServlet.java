@@ -40,6 +40,11 @@ public class NewServlet extends HttpServlet {
             out.println("<title>Servlet NewServlet</title>");            
             out.println("</head>");
             out.println("<body>");
+            out.println("<h1>Nome " + request.getParameter("nome") + "</h1>");
+            out.println("<h1>sobNome " + request.getParameter("sobnome") + "</h1>");
+            out.println("<h1>Endereço " + request.getParameter("endereco") + "</h1>");
+            out.println("<h1>Telefone" + request.getParameter("telefone") + "</h1>");
+            out.println("<h1>Cidade " + request.getParameter("cidade") + "</h1>");
             out.println("<h1>Servlet NewServlet at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
@@ -84,5 +89,9 @@ public class NewServlet extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
+
+    private String getParameter(String nome) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
 }
